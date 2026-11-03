@@ -1,0 +1,51 @@
+# Clean and tidy: Binaries and engineering artifacts
+######################################################
+# Compiled binaries and package files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.pid
+
+# Test and coverage artifacts
+*.test
+*.out
+*.coverprofile
+profile.cov
+
+# Common custom binary destination directories
+bin/
+dist/
+out/
+
+# Air hot-reload binary & tmp directories
+tmp/
+**/tmp/
+
+# Go Workspaces (Keep untracked local environments clean)
+######################################################
+go.work
+go.work.sum
+
+# Dependency Directories (Optional)
+######################################################
+# Uncomment this if you prefer caching your vendors locally instead of downloading 
+# dependencies during your CI/CD builds (e.g., in air-gapped systems).
+# vendor/
+
+# Local Environment and Configuration Secrets
+######################################################
+.env
+.env.local
+.env.*.local
+
+# Editor / IDE Specific files
+######################################################
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
